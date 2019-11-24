@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Live Feeds</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <link href="/Donut3D.css" rel="stylesheet">
+    <script src="/webjars/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js" type="text/javascript"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="/app.js"></script>
+<!--    <script src="https://d3js.org/d3.v3.min.js"></script>-->
+    <script src="/cloud.js"></script>
+    <script src="/wordcloud.js"></script>
+<!--    <script src="/Donut3D.js"></script>-->
+
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2>
+</noscript>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="column">
+            <table id="conversation" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Live Tweets:</th>
+                </tr>
+                </thead>
+                <tbody id="feedBlock">
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <div class="row" style="margin-left:0px;">
+                <h3>Live WordCloud:</h3>
+                <div id="chart" style="height:50vw;"></div>
+            </div>
+            <div class="row" style="margin-left:0px;">
+                <div id="graph" style="height:50vw;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
