@@ -13,6 +13,10 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
 
+
+/**
+ * basic core sentimental pipeline wrapper class
+ */
 public class CoreSentimentalPipeline {
 
     private StanfordCoreNLP pipeline;
@@ -22,12 +26,18 @@ public class CoreSentimentalPipeline {
         initPipeline();
     }
 
+    // init load model StanfordCoreNLP and properties
     private void initPipeline() {
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
         pipeline = new StanfordCoreNLP(props);
     }
 
+    /**
+     * Output Sentiment based on the input text
+     * @param text : String
+     * @return Sentiment
+     */
     public Sentiment getPrimarySentiment(String text) {
         Sentiment mainSentiment = Sentiment.STRONG_NEGATIVE;
         if (text != null && text.length() > 0) {

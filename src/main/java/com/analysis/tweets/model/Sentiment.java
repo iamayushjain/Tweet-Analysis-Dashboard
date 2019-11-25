@@ -5,6 +5,7 @@ package com.analysis.tweets.model;
  * An enumeration of valid sentiment values for the sentiment classifier.
  * </pre>
  */
+@SuppressWarnings("unused")
 public enum Sentiment {
     /**
      * <code>STRONG_NEGATIVE = 0;</code>
@@ -51,7 +52,7 @@ public enum Sentiment {
 
     private int value;
 
-    private Sentiment(int value) {
+    Sentiment(int value) {
         this.value = value;
     }
 

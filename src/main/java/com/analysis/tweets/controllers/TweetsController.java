@@ -24,7 +24,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public class TweetsController {
 
-    private final String STREAM_TWEETS_API = "/tweets/";
+    private final String STREAM_TWEETS_WITH_SENTIMENTS_API = "/tweets_sentiments/";
 
     @Autowired
     private TweetsServiceImpl tweetsServiceImpl;
@@ -37,7 +37,7 @@ public class TweetsController {
      * @todo add sliding window for every external request
      */
     @RequestMapping(
-            value = STREAM_TWEETS_API,
+            value = STREAM_TWEETS_WITH_SENTIMENTS_API,
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
