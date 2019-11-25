@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoreSentimentTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-25T04:15:45" hostname="dellca-Vostro-2420" time="1.04">
+  <properties/>
+  <testcase name="testCoreSentimentStrongPositive" classname="CoreSentimentTest" time="0.538"/>
+  <testcase name="testCoreSentimentStrongNegative" classname="CoreSentimentTest" time="0.266"/>
+  <testcase name="testCoreSentimentWeakPositive" classname="CoreSentimentTest" time="0.124"/>
+  <testcase name="testCoreSentimentNeutral" classname="CoreSentimentTest" time="0.061"/>
+  <testcase name="testCoreSentimentWeakNegative" classname="CoreSentimentTest" time="0.04"/>
+  <system-out><![CDATA[09:45:44.618 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:44.630 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:44.634 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:45.245 [Test worker] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [0.6 sec].
+09:45:45.250 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:45.955 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for This was the best movie I have ever seen is STRONG_POSITIVE
+09:45:45.958 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:45.959 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:45.960 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:45.960 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.226 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for This was the worst movie I have ever seen is STRONG_NEGATIVE
+09:45:46.228 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:46.228 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:46.228 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:46.229 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.352 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for you are doing great is WEAK_POSITIVE
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.415 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for Varun talks in a condescending way is NEUTRAL
+09:45:46.417 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:46.417 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:46.418 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:46.418 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.458 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for Shyam is not a great batsman is WEAK_NEGATIVE
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

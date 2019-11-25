@@ -55,7 +55,7 @@ function showTweet(message, sentiment) {
     text_string+=message;
     updateSentimentData(sentiment);
     generateWordCloud();
-//    generateDonut3D();
+    generateDonut3D();
 }
 function updateSentimentData(sentiment){
     for(var k in sentimentData){

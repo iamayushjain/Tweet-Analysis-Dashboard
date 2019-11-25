@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class CoreSentimentTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class CoreSentimentTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; CoreSentimentTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.029s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testCoreSentimentNeutral</td>
+<td class="success">0.061s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCoreSentimentStrongNegative</td>
+<td class="success">0.266s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCoreSentimentStrongPositive</td>
+<td class="success">0.538s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCoreSentimentWeakNegative</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCoreSentimentWeakPositive</td>
+<td class="success">0.124s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>09:45:44.618 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:44.630 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:44.634 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:45.245 [Test worker] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [0.6 sec].
+09:45:45.250 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:45.955 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for This was the best movie I have ever seen is STRONG_POSITIVE
+09:45:45.958 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:45.959 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:45.960 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:45.960 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.226 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for This was the worst movie I have ever seen is STRONG_NEGATIVE
+09:45:46.228 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:46.228 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:46.228 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:46.229 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.352 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for you are doing great is WEAK_POSITIVE
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:46.354 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.415 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for Varun talks in a condescending way is NEUTRAL
+09:45:46.417 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+09:45:46.417 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+09:45:46.418 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+09:45:46.418 [Test worker] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sentiment
+09:45:46.458 [Test worker] INFO com.analysis.tweets.nlp.CoreSentimentalPipeline - Sentiment for Shyam is not a great batsman is WEAK_NEGATIVE
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 25 Nov, 2019 9:45:46 AM</p>
+</div>
+</div>
+</body>
+</html>
